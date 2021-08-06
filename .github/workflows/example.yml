@@ -15,8 +15,8 @@ jobs:
 
       - name: Notarize Go project with BoM
         #--> Run the GitHub action
-        # uses: codenotary/vcn-notarize-bom-go-github-action@v1.0.0
-        uses: codenotary/vcn-notarize-bom-go-github-action@main
+        uses: codenotary/vcn-notarize-bom-go-github-action@v1.0.0
+        # uses: codenotary/vcn-notarize-bom-go-github-action@main
         with:
           asset: git://.
           cnil_host: ${{ secrets.CNIL_HOST }}
@@ -39,8 +39,8 @@ jobs:
 
       - name: Notarize Go binary with BoM
         #--> Run the GitHub action
-        # uses: codenotary/vcn-notarize-bom-go-github-action@v1.0.0
-        uses: codenotary/vcn-notarize-bom-go-github-action@main
+        uses: codenotary/vcn-notarize-bom-go-github-action@v1.0.0
+        # uses: codenotary/vcn-notarize-bom-go-github-action@main
         with:
           asset: example-go-project
           cnil_host: ${{ secrets.CNIL_HOST }}
