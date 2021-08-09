@@ -10,8 +10,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.review.commit_id }}
 
       - name: Notarize Go project with BoM
         #--> Run the GitHub action
